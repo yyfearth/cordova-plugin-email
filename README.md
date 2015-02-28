@@ -1,12 +1,7 @@
-
-<p align="right">
-    <a href="https://github.com/katzer/cordova-plugin-email-composer/tree/example">EXAMPLE :point_right:</a>
-</p>
-
 Cordova Email Plugin
 ====================
 
-<img width="260px" align="right" hspace="7" vspace="5" src="http://flashsimulations.com/wp-content/uploads/2011/12/air-ios-in-app-mail-app.png">
+<img width="260px" align="right" hspace="7" vspace="5" src="https://github.com/hypery2k/cordova-email-plugin/raw/master/sample.png">
 
 The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
 
@@ -40,29 +35,29 @@ The plugin can either be installed from git repository, from local file system t
 From master:
 ```bash
 # ~~ from master branch ~~
-cordova plugin add https://github.com/katzer/cordova-plugin-email-composer.git
+cordova plugin add https://github.com/hypery2k/cordova-email-plugin.git
 ```
 from a local folder:
 ```bash
 # ~~ local folder ~~
-cordova plugin add de.appplant.cordova.plugin.email-composer --searchpath path/to/plugin
+cordova plugin add de.martinreinhardt.cordova.plugins.email --searchpath path/to/plugin
 ```
 or to use the last stable version:
 ```bash
 # ~~ stable version ~~
-cordova plugin add de.appplant.cordova.plugin.email-composer@0.8.2
+cordova plugin add de.martinreinhardt.cordova.plugins.email@0.8.2
 ```
 
 ### PhoneGap Build
 Add the following xml to your config.xml to always use the latest version of this plugin:
 ```xml
-<gap:plugin name="de.appplant.cordova.plugin.email-composer" version="0.8.2" />
+<gap:plugin name="de.martinreinhardt.cordova.plugins.email" version="0.8.2" />
 ```
 More informations can be found [here][PGB_plugin].
 
 
 ## ChangeLog
-#### Version 0.8.2 (not yet released)
+#### Version 0.8.2 
 - Added new namespace `cordova.plugins.email`<br>
   **Note:** The former `plugin.email` namespace is now deprecated and will be removed with the next major release.
 - [___change:___] Unified `absolute:` and `relative:` to `file:`
@@ -324,7 +319,7 @@ This software is released under the [Apache 2.0 License][apache2_license].
 [PGB]: http://docs.build.phonegap.com/en_US/index.html
 [PGB_plugin]: https://build.phonegap.com/plugins/705
 [messageui_framework]: #compile-error-on-ios
-[changelog]: https://github.com/katzer/cordova-plugin-email-composer/blob/master/CHANGELOG.md
+[changelog]: https://github.com/hypery2k/cordova-email-plugin/blob/master/CHANGELOG.md
 [available]: #determine-if-the-device-is-capable-to-send-emails
 [open]: #open-a-pre-filled-email-draft
 [email_app]: #specify-email-app
