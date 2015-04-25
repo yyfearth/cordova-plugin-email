@@ -40,12 +40,12 @@ cordova plugin add https://github.com/hypery2k/cordova-email-plugin.git
 from a local folder:
 ```bash
 # ~~ local folder ~~
-cordova plugin add de.martinreinhardt.cordova.plugins.email --searchpath path/to/plugin
+cordova plugin add cordova-plugin-email --searchpath path/to/plugin
 ```
 or to use the last stable version:
 ```bash
 # ~~ stable version ~~
-cordova plugin add de.martinreinhardt.cordova.plugins.email@0.8.2
+cordova plugin add cordova-plugin-email
 ```
 
 ### PhoneGap Build

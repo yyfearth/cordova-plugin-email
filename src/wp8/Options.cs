@@ -23,7 +23,8 @@ using System;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace De.APPPlant.Cordova.Plugin.EmailComposer
+
+namespace De.Martinreinhardt.Cordova.Plugins.Email
 {
     /// <summary>
     /// Represents email composer task options

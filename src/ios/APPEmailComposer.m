@@ -415,7 +415,7 @@
                                                    range:NSMakeRange(0, length)
                                             withTemplate:@""];
 
-    NSData* data = [NSData dataFromBase64String:dataString];
+    NSData* data = [NSData cdv_dataFromBase64String:dataString];
 
     return data;
 }

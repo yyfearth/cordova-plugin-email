@@ -19,7 +19,7 @@
     under the License.
 */
 
-using De.APPPlant.Cordova.Plugin.EmailComposer;
+using De.Martinreinhardt.Cordova.Plugins.Email;
 using Microsoft.Phone.Tasks;
 using System;
 using System.Linq;

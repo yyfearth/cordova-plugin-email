@@ -23,8 +23,8 @@ under the License.
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-id="de.martinreinhardt.cordova.plugins.email"
-version="0.5.0">
+id="cordova-plugin-email"
+version="0.7.0">
 
     <name>EmailComposer</name>
     <description>
@@ -38,7 +38,7 @@ version="0.5.0">
     <issue>https://github.com/hypery2k/cordova-email-plugin/issues</issue>
 
     <engines>
-        <engine name="cordova" version=">=3.0.0" />
+        <engine name="cordova" version=">=3.8.0" />
     </engines>
 
     <!-- interface -->
@@ -66,13 +66,13 @@ version="0.5.0">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="android-package"
-                value="de.appplant.cordova.emailcomposer.EmailComposer"/>
+                value="de.martinreinhardt.cordova.plugins.email.EmailComposer"/>
             </feature>
         </config-file>
 
         <source-file
         src="src/android/EmailComposer.java"
-        target-dir="src/de/appplant/cordova/emailcomposer" />
+        target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
     </platform>
 
@@ -81,13 +81,13 @@ version="0.5.0">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="android-package"
-                value="de.appplant.cordova.emailcomposer.EmailComposer"/>
+                value="de.martinreinhardt.cordova.plugins.email.EmailComposer"/>
             </feature>
         </config-file>
 
         <source-file
         src="src/android/EmailComposer.java"
-        target-dir="src/de/appplant/cordova/emailcomposer" />
+        target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
     </platform>
 
