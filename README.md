@@ -1,9 +1,13 @@
-Cordova Email Plugin
-====================
+# Cordova Email Plugin
+
+
+[![Build Status](https://travis-ci.org/hypery2k/cordova-email-plugin.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-plugin-plugin) [![Build status](https://ci.appveyor.com/api/projects/status/d1g8ygx20or6htpg?svg=true)](https://ci.appveyor.com/project/hypery2k/cordova-email-plugin)
+ [![Bountysource](https://www.bountysource.com/badge/issue?issue_id=12391802)](https://www.bountysource.com/issues/12391802-integration-tests?utm_source=12391802&utm_medium=shield&utm_campaign=ISSUE_BADGE)
+
+> The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
 
 <img width="260px" align="right" hspace="7" vspace="5" src="https://github.com/hypery2k/cordova-email-plugin/raw/master/sample.png">
 
-The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
 
 Using this interface does not guarantee immediate delivery of the corresponding email message. The user may cancel the creation of the message, and if the user does choose to send the message, the message is only queued in the Mail application outbox. This allows you to generate emails even in situations where the user does not have network access, such as in airplane mode. This interface does not provide a way for you to verify whether emails were actually sent.
 
