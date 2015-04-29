@@ -18,5 +18,5 @@ test_script:
   - grunt build
   - cordova platform add wp8
   - cordova build wp8
-  - cordova plugin add cordova-email-plugin
+  - cordova plugin add ../cordova-email-plugin
   - cordova build wp8
