@@ -6,6 +6,8 @@
 
 > The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
 
+[![NPM](https://nodei.co/npm/cordova-plugin-email.png)](https://nodei.co/npm/cordova-plugin-email/)
+
 ## Installation
 
 ```bash
