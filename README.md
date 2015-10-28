@@ -178,10 +178,11 @@ cordova.plugins.email.open({
 
 ### Get informed when the view has been dismissed
 The `open` method supports additional callback to get informed when the view has been dismissed.
+NOTE: `sent` result is available only on iOS platform
 
 ```javascript
-cordova.plugins.email.open(properties, function () {
-    console.log('email view dismissed');
+cordova.plugins.email.open(properties, function (sent) {
+    console.log('email ' + (sent ? 'sent' : 'cancelled'));
 }, this);
 ```
 
