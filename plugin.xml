@@ -24,7 +24,7 @@ under the License.
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 id="cordova-plugin-email"
-version="0.7.0">
+version="1.0.0">
 
     <name>EmailComposer</name>
     <description>
