@@ -74,7 +74,7 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
-        [self execCallback];
+        [self execCallback: FALSE];
         return;
     }
 
@@ -86,7 +86,7 @@
         draft = [self getDraftWithProperties:properties];
 
         if (!draft) {
-            [self execCallback];
+            [self execCallback: FALSE];
             return;
         }
 
@@ -107,7 +107,7 @@
 {
     [controller dismissViewControllerAnimated:YES completion:nil];
 
-    [self execCallback];
+    [self execCallback: result == MFMailComposeResultSent];
 }
 
 #pragma mark -
@@ -475,10 +475,11 @@
 /**
  * Invokes the callback without any parameter.
  */
-- (void) execCallback
+- (void) execCallback:(BOOL) sent
 {
     CDVPluginResult *result = [CDVPluginResult
-                               resultWithStatus:CDVCommandStatus_OK];
+                               resultWithStatus:CDVCommandStatus_OK
+                               messageAsBool:sent];
 
     [self.commandDelegate sendPluginResult:result
                                 callbackId:_command.callbackId];
