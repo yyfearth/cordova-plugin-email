@@ -56,8 +56,7 @@ exports.getDefaults = function () {
  */
 exports.isAvailable = function (callback, scope) {
     var fn = this.createCallbackFn(callback, scope);
-
-    exec(fn, null, 'EmailComposer', 'isAvailable', []);
+    exec(fn, function () { fn(false); }, 'EmailComposer', 'isAvailable', []);
 };
 
 /**
