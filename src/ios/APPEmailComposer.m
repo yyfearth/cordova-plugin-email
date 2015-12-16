@@ -20,7 +20,6 @@
  */
 
 #import "APPEmailComposer.h"
-#import "Cordova/NSData+Base64.h"
 #import "Cordova/CDVAvailability.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
@@ -415,7 +414,7 @@
                                                    range:NSMakeRange(0, length)
                                             withTemplate:@""];
 
-    NSData* data = [NSData cdv_dataFromBase64String:dataString];
+    NSData* data = [[NSData alloc] initWithBase64EncodedString:dataString options:0];
 
     return data;
 }
