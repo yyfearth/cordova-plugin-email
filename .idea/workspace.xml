@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9e11c4f-519e-4f0a-98fc-16d26e4e932c" name="Default" comment="Update fork (#10)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wp8/EmailComposer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/wp8/Options.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appveyor.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/runIntegrationTests.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/android/EmailComposer.java" afterPath="$PROJECT_DIR$/src/android/EmailComposer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/android/EmailComposerImpl.java" afterPath="$PROJECT_DIR$/src/android/EmailComposerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/cordova-email-plugin.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/xtextAutoBuilderState.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="cordova-email-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +39,9 @@
             <state vertical-scroll-proportion="-0.0">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="49" />
               <folding>
-                <element signature="e#0#5797#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4881#4882#0" expanded="false" />
+                <element signature="e#4963#4964#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,7 +53,9 @@
             <state vertical-scroll-proportion="-0.0">
               <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="48" />
               <folding>
-                <element signature="e#0#16836#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4560#4561#0" expanded="false" />
+                <element signature="e#4621#4622#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -609,12 +612,12 @@
       <option name="number" value="Default" />
       <updated>1458709786469</updated>
       <workItem from="1458709788048" duration="1457000" />
-      <workItem from="1458711255458" duration="149000" />
+      <workItem from="1458711255458" duration="232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1606000" />
+    <option name="totallyTimeSpent" value="1689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="6" />
@@ -667,7 +670,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="49" />
           <folding>
-            <element signature="e#0#5797#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4881#4882#0" expanded="false" />
+            <element signature="e#4963#4964#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,7 +682,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#16836#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4560#4561#0" expanded="false" />
+            <element signature="e#4621#4622#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -728,7 +735,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="49" />
           <folding>
-            <element signature="e#0#5797#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4881#4882#0" expanded="false" />
+            <element signature="e#4963#4964#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -779,7 +788,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="48" />
           <folding>
-            <element signature="e#0#16836#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4560#4561#0" expanded="false" />
+            <element signature="e#4621#4622#0" expanded="false" />
           </folding>
         </state>
       </provider>
