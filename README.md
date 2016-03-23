@@ -1,18 +1,26 @@
+# Cordova Email Plugin
 
-[![npm version](https://badge.fury.io/js/cordova-plugin-email-composer.svg)](http://badge.fury.io/js/cordova-plugin-email-composer)
-[![Code Climate](https://codeclimate.com/github/katzer/cordova-plugin-email-composer/badges/gpa.svg)](https://codeclimate.com/github/katzer/cordova-plugin-email-composer)
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L3HKQCD9UA35A "Donate once-off to this project using Paypal")
 
-<p align="right">
-    <a href="https://github.com/katzer/cordova-plugin-email-composer/tree/example">EXAMPLE :point_right:</a>
-</p>
+[![Build Status](https://travis-ci.org/hypery2k/cordova-email-plugin.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-email-plugin) [![Build status](https://ci.appveyor.com/api/projects/status/d1g8ygx20or6htpg?svg=true)](https://ci.appveyor.com/project/hypery2k/cordova-email-plugin) [![npm version](https://badge.fury.io/js/cordova-plugin-urlhandler.svg)](http://badge.fury.io/js/cordova-plugin-urlhandler) [![Dependency Status](https://david-dm.org/hypery2k/cordova-email-plugin.svg)](https://david-dm.org/hypery2k/cordova-email-plugin) [![devDependency Status](https://david-dm.org/hypery2k/cordova-email-plugin/dev-status.svg)](https://david-dm.org/hypery2k/cordova-email-plugin#info=devDependencies) 
 
-Cordova Email Plugin
-====================
+> The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
 
-<img width="260px" align="right" hspace="10" vspace="5" src="http://flashsimulations.com/wp-content/uploads/2011/12/air-ios-in-app-mail-app.png">
+[![NPM](https://nodei.co/npm/cordova-plugin-email.png)](https://nodei.co/npm/cordova-plugin-email/)
 
-The plugin provides access to the standard interface that manages the editing and sending an email message. You can use this view controller to display a standard email view inside your application and populate the fields of that view with initial values, such as the subject, email recipients, body text, and attachments. The user can edit the initial contents you specify and choose to send the email or cancel the operation.
+Feel free to **donate**
+
+<a href='http://www.pledgie.com/campaigns/25442'><img alt='Click here to lend your support to: Owncloud Apps and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/23447.png?skin_name=chrome' border='0' /></a>
+<a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AGPGLZYNV6Y5S">
+<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif"/>
+</img></a>
+
+## Installation
+
+```bash
+$ cordova plugin add cordova-plugin-email
+```
+
+<img width="260px" align="right" hspace="7" vspace="5" src="https://github.com/hypery2k/cordova-email-plugin/raw/master/sample.png">
 
 Using this interface does not guarantee immediate delivery of the corresponding email message. The user may cancel the creation of the message, and if the user does choose to send the message, the message is only queued in the Mail application outbox. This allows you to generate emails even in situations where the user does not have network access, such as in airplane mode. This interface does not provide a way for you to verify whether emails were actually sent.<br><br>
 
@@ -61,20 +69,6 @@ Add the following xml to your config.xml to always use the latest version of thi
 
 
 ## ChangeLog
-#### Version 0.8.3 (01.03.2016)
-63 commits including bug fixes and enhancements:
-- [___change:___] New plugin ID: _cordova-plugin-email-composer_
-- [enhancement:] Published on npm
-- [enhancement:] Allowed the chooser header text to be configured (#113)
-- [enhancement:] Plain mailto: support
-- [enhancement:] Specify email client using `app:` flag
-- [enhancement:] More samples in Sample-App
-- [bugfix:] Build issues with iOS and Android
-- [bugfix:] Compatibility with newest OS and cordova platform versions
-- [bugfix:] Crash on iOS when presenting view controller from background (#169)
-- [bugfix:] Crash on iOS when no email account is setup
-- [bugfix:] Resolved issues with attachments on all platforms
-- ...
 
 #### Known issues
 - _\<img\>_ tags do not work on Android.

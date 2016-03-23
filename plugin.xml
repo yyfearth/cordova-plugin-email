@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
     Copyright 2013-2016 appPlant UG
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-    KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-email-composer"
-        version="0.8.3">
+        id="cordova-plugin-email"
+        version="1.1.0">
 
     <name>EmailComposer</name>
-
     <description>
-        Provides access to the standard interface that manages
+        Provides access to the standard interface that manages.
         the editing and sending an email message
     </description>
-
-    <repo>https://github.com/katzer/cordova-plugin-email-composer.git</repo>
-
-    <keywords>appplant, email</keywords>
-
+    <author>Martin Reinhardt, Sebastián Katzer</author>
     <license>Apache 2.0</license>
-
-    <author>Sebastián Katzer</author>
+    <keywords>cordova,email</keywords>
+    <repo>https://github.com/hypery2k/cordova-email-plugin.git</repo>
+    <issue>https://github.com/hypery2k/cordova-email-plugin/issues</issue>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
@@ -53,7 +47,6 @@
 
     <!-- ios -->
     <platform name="ios">
-
         <config-file target="config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="ios-package" value="APPEmailComposer"/>
@@ -78,11 +71,10 @@
 
     <!-- android -->
     <platform name="android">
-
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="android-package"
-                       value="de.appplant.cordova.emailcomposer.EmailComposer"/>
+                       value="de.martinreinhardt.cordova.plugins.email.EmailComposer"/>
             </feature>
         </config-file>
 
@@ -92,21 +84,20 @@
 
         <source-file
             src="src/android/EmailComposer.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
+            target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
         <source-file
             src="src/android/EmailComposerImpl.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
+            target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
     </platform>
 
-    <!-- amazon-fireos -->
+	<!-- amazon-fireos -->
     <platform name="amazon-fireos">
-
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="android-package"
-                       value="de.appplant.cordova.emailcomposer.EmailComposer"/>
+                       value="de.martinreinhardt.cordova.plugins.email.EmailComposer"/>
             </feature>
         </config-file>
 
@@ -116,17 +107,28 @@
 
         <source-file
             src="src/android/EmailComposer.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
+            target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
         <source-file
             src="src/android/EmailComposerImpl.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
+            target-dir="src/de/martinreinhardt/cordova/plugins/email" />
 
+    </platform>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="EmailComposer">
+                <param name="wp-package" value="EmailComposer"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp8/EmailComposer.cs" />
+        <source-file src="src/wp8/Options.cs" />
     </platform>
 
     <!-- windows -->
     <platform name="windows">
-
         <js-module src="src/windows/EmailComposerProxy.js" name="EmailComposerProxy">
             <runs />
         </js-module>
@@ -142,7 +144,7 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="EmailComposer">
                 <param name="browser-package"
-                       value="de.appplant.cordova.emailcomposer.EmailComposer"/>
+                       value="de.martinreinhardt.cordova.plugins.email.EmailComposer"/>
             </feature>
         </config-file>
 
