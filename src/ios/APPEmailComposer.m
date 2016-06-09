@@ -1,4 +1,4 @@
-/*
+﻿/*
  Copyright 2013-2014 appPlant UG
 
  Licensed to the Apache Software Foundation (ASF) under one
@@ -258,6 +258,10 @@
             NSString* pathExt  = [basename pathExtension];
             NSString* fileName = [basename pathComponents].lastObject;
             NSString* mimeType = [self getMimeTypeFromFileExtension:pathExt];
+
+            if (nil == mimeType) {
+                mimeType = @"application/octet-stream";
+            }
 
             [draft addAttachmentData:data mimeType:mimeType fileName:fileName];
         }
