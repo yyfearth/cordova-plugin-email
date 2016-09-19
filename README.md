@@ -119,7 +119,10 @@ cordova.plugins.email.isAvailable(
         // alert('Service is not available') unless isAvailable;
     }
 );
+
 ```
+
+>**Note**: If the user didn't have any email account configured on iOS this will also return false
 
 ### Open a pre-filled email draft
 A pre-filled email draft can be opened through the `email.open` or `email.openDraft` interface. The method takes a hash as an argument to specify the email's properties. All properties are optional. Further more it accepts an callback function to be called after the email view has been dismissed.
