@@ -23,6 +23,11 @@
 ```bash
 $ cordova plugin add cordova-plugin-email
 ```
+Or if you want to use the development version (nightly build), which maybe not stable!:
+
+```
+cordova plugin add cordova-plugin-email@next
+```
 
 <img width="260px" align="right" hspace="7" vspace="5" src="https://github.com/hypery2k/cordova-email-plugin/raw/master/sample.png">
 
