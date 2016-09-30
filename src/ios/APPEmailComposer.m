@@ -67,7 +67,6 @@
         CDVPluginResult* result;
 
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
-                                     messageAsBool:canSendMail
                                      messageAsMultipart:boolArray];
 
         [self.commandDelegate sendPluginResult:result

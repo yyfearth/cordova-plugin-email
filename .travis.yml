@@ -4,6 +4,7 @@ env:
   - PLATFORM=android
 script:
   - npm run test
+  - npm run e2e
 before_install:
   - sudo gem install compass
   - npm install -g grunt-cli bower cordova ios-sim
