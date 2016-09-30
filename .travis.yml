@@ -3,8 +3,8 @@ env:
   - PLATFORM=ios
   - PLATFORM=android
 script:
-  - npm run test
-  - npm run e2e
+  - export JAVA_HOME=$(/usr/libexec/java_home) && npm run test
+  - export JAVA_HOME=$(/usr/libexec/java_home) && npm run e2e
 before_install:
   - sudo gem install compass
   - npm install -g grunt-cli bower cordova ios-sim

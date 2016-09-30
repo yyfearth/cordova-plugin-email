@@ -30,13 +30,13 @@ node {
             }
 
             stage('Test') {
-                sh "PLATFORM=android npm run test"
-                sh "PLATFORM=ios npm run test"
+                sh "export PLATFORM=android && npm run test"
+                sh "export PLATFORM=ios && npm run test"
             }
 
-            stage('Test') {
-                sh "PLATFORM=android npm run e2e"
-                sh "PLATFORM=ios npm run e2e"
+            stage('Integration-Test') {
+                sh "export PLATFORM=android && npm run e2e"
+                sh "export PLATFORM=ios && npm run e2e"
             }
 
             stage('Publish NPM snapshot') {
