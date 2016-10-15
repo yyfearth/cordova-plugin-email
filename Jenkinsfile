@@ -26,18 +26,19 @@ node {
             }
 
             stage('Build') {
-                sh "npm run prepare"
                 sh "npm install"
+                sh "npm run prepare"
+                sh "npm run build"
             }
 
             stage('Test') {
-                sh "export PLATFORM=android && npm run test"
-                sh "export PLATFORM=ios && npm run test"
+                //sh "export PLATFORM=android && npm run test"
+                //sh "export PLATFORM=ios && npm run test"
             }
 
             stage('Integration-Test') {
-                sh "export PLATFORM=android && npm run e2e"
-                sh "export PLATFORM=ios && npm run e2e"
+                //sh "export PLATFORM=android && npm run e2e"
+                //sh "export PLATFORM=ios && npm run e2e"
             }
 
             stage('Publish NPM snapshot') {

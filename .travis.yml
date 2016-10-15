@@ -8,8 +8,9 @@ env:
   - CORDOVA_VERSION=6.0.0 PLATFORM=ios
 script:
   - npm run prepare
-  - npm run test
-  - npm run e2e
+  - npm run build
+  ##- npm run test
+  ##- npm run e2e
 before_install:
   - if [ "$TRAVIS_OS_NAME" == "osx" ]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
   # Install base Android SDK and components
