@@ -46,7 +46,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-import static de.appplant.cordova.emailcomposer.EmailComposer.LOG_TAG;
+import static de.martinreinhardt.cordova.plugins.email.EmailComposer.LOG_TAG;
 
 /**
  * Implements the interface methods of the plugin.
