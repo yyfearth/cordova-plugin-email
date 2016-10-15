@@ -17,9 +17,6 @@ node {
         echo "PATH is $env.PATH"
 
         try {
-            stage('Clean workspace') {
-                deleteDir()
-            }
 
             stage('Checkout') {
                 checkout scm
