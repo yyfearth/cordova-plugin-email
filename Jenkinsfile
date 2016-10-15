@@ -26,7 +26,7 @@ node {
                 sh "npm install"
                 sh "npm run clean && npm run setupDemoApp"
                 sh "export PLATFORM=android && npm run build"
-                sh "export PLATFORM=ios && && npm run build"
+                sh "export PLATFORM=ios && npm run build"
             }
 
             stage('Test') {
