@@ -1,6 +1,6 @@
 language: objective-c
 env:
-  - CORDOVA_VERSION=latest PLATFORM=android
+#  - CORDOVA_VERSION=latest PLATFORM=android
   - CORDOVA_VERSION=6.1.1 PLATFORM=android
   - CORDOVA_VERSION=6.0.0 PLATFORM=android
   - CORDOVA_VERSION=latest PLATFORM=ios
