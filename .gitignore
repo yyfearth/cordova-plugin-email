@@ -1,7 +1,8 @@
-.idea
+.idea/*
 *.iml
-/dist
-/platforms
-/out
-/tmp
-/node_modules
+*.log
+dist
+node_modules
+tmp
+platforms
+out
