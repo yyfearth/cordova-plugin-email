@@ -62,7 +62,10 @@
 - (void) isAvailable:(CDVInvokedUrlCommand*)command
 {
     [self.commandDelegate runInBackground:^{
-        NSString* scheme = command.arguments[0];
+        NSString* scheme = @"mailto";
+        if (!command.arguments || command.arguments.count >= 1){
+          scheme =  command.arguments[0];
+        }
         NSArray* boolArray = [_impl canSendMail:scheme];
         CDVPluginResult* result;
 
