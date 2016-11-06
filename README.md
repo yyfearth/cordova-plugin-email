@@ -319,6 +319,16 @@ HTML+CSS formatted body are not supported through the native API for Windows.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+### Development
+
+### Testing
+
+Android and iOS Tooling setup, see 
+```
+export PLATFORM=android # or ios ..
+npm run clean && npm run setupDemoApp && npm run build
+```
+
 
 ## License
 
