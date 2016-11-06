@@ -91,6 +91,9 @@
 
     [self.commandDelegate runInBackground:^{
         NSString* scheme = [props objectForKey:@"app"];
+        if (!scheme) {
+            scheme = @"mailto";
+        }
 
         if (![self canUseAppleMail:scheme]) {
             [self openURLFromProperties:props];
