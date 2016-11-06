@@ -1,17 +1,7 @@
 {
   "name": "cordova-plugin-email",
-  "version": "1.2.0-dev",
+  "version": "1.2.1",
   "description": "Cordova Email Plugin",
-  "cordova": {
-    "id": "cordova-plugin-email",
-    "platforms": [
-      "android",
-      "amazon-fireos",
-      "ios",
-      "windows",
-      "wp8"
-    ]
-  },
   "scripts": {
     "clean": "rm -rf tmp && mkdir -p tmp",
     "setupAndroidSDK": "cd tmp && git clone https://github.com/simpligility/maven-android-sdk-deployer.git && cd maven-android-sdk-deployer/ && mvn install -P 6.0 && ls ~/.m2/repository/android/android/",
@@ -29,6 +19,16 @@
     "karma": "0.12.16",
     "karma-cordova-launcher": "0.0.9",
     "xml2js": "0.4.17"
+  },
+  "cordova": {
+    "id": "cordova-plugin-email",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ios",
+      "windows",
+      "wp8"
+    ]
   },
   "repository": {
     "type": "git",
