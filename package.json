@@ -13,7 +13,8 @@
     "e2e": "cd tmp/cordova-demo-app/ && cordova build ${PLATFORM} && cd ../..",
     "abc":"karma start karma.conf.js",
     "changelog":" conventional-changelog -p angular -i CHANGELOG.md -s",
-    "release": "npm run build && npm run test && npm run changelog && git add CHANGELOG.MD && npm publish"
+    "build-release": "npm run clean && npm run setupDemoApp && npm run build",
+    "release": "PLATFORM=android npm run build-release && PLATFORM=ios npm run build-release && npm run changelog && git add CHANGELOG.MD && npm publish"
   },
   "devDependencies": {
     "conventional-changelog": "1.1.0",

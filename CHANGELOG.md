@@ -7,6 +7,16 @@
 * **iOS:** Fix isAvailable null error ([#23](https://github.com/hypery2k/cordova-email-plugin/issues/23)) ([78ec84c](https://github.com/hypery2k/cordova-email-plugin/commit/78ec84c))
 
 
+
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/hypery2k/cordova-email-plugin/compare/v1.2.0...v1.2.1) (2016-11-06)
+
+
+### Bug Fixes
+
+* **iOS:** Fix isAvailable null error ([#23](https://github.com/hypery2k/cordova-email-plugin/issues/23)) ([78ec84c](https://github.com/hypery2k/cordova-email-plugin/commit/78ec84c))
+
+
 <a name="1.2.0"></a>
 ## [1.2.0](https://github.com/hypery2k/cordova-email-plugin/compare/v1.1.1...v1.2.0) (2016-11-06)
 
