@@ -11,9 +11,12 @@
     "test": "cd tmp/test-app && node ../../etc/prepare_test_app.js config.xml && cordova plugin add http://git-wip-us.apache.org/repos/asf/cordova-plugin-test-framework.git && cordova plugin add ../../tests && cordova build ${PLATFORM} && cordova run ${PLATFORM}",
     "posttest": "jsdoc -c jsdoc.json && jsdoc2md www/email_composer.js | sed s/emailComposerPlugin/cordova.plugins.email/g | sed s/EmailComposerPlugin/cordova.plugins.email/g > PLUGIN_USAGE.MD && cd tmp/test-app && cordova plugin rm cordova-plugin-email-tests",
     "e2e": "cd tmp/cordova-demo-app/ && cordova build ${PLATFORM} && cd ../..",
-    "abc":"karma start karma.conf.js"
+    "abc":"karma start karma.conf.js",
+    "changelog":" conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release": "npm run build && npm run test && npm run changelog && git add CHANGELOG.MD && npm publish"
   },
   "devDependencies": {
+    "conventional-changelog": "1.1.0",
     "jsdoc": "3.4.0",
     "jsdoc-to-markdown": "1.3.3",
     "karma": "0.12.16",
