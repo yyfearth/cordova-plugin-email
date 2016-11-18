@@ -1,4 +1,5 @@
 <a name="cordova.plugins.email"></a>
+
 ## cordova.plugins.email : <code>object</code>
 **Kind**: global namespace  
 
@@ -12,16 +13,19 @@
     * [.openDraft()](#cordova.plugins.email+openDraft)
 
 <a name="cordova.plugins.email+aliases"></a>
+
 ### cordova.plugins.email.aliases
 List of all registered mail app aliases.
 
 **Kind**: instance property of <code>[cordova.plugins.email](#cordova.plugins.email)</code>  
 <a name="cordova.plugins.email+getDefaults"></a>
+
 ### cordova.plugins.email.getDefaults() ⇒ <code>Object</code>
 List of all available options with their default value.
 
 **Kind**: instance method of <code>[cordova.plugins.email](#cordova.plugins.email)</code>  
 <a name="cordova.plugins.email+isAvailable"></a>
+
 ### cordova.plugins.email.isAvailable(callback, scope)
 Verifies if sending emails is supported on the device.
 
@@ -33,6 +37,7 @@ Verifies if sending emails is supported on the device.
 | scope | <code>Object</code> | The scope of the callback |
 
 <a name="cordova.plugins.email+open"></a>
+
 ### cordova.plugins.email.open(options, callback, scope)
 Displays the email composer pre-filled with data.
 
@@ -45,6 +50,7 @@ Displays the email composer pre-filled with data.
 | scope | <code>Object</code> | The scope of the callback |
 
 <a name="cordova.plugins.email+addAlias"></a>
+
 ### cordova.plugins.email.addAlias(alias, packageName)
 Adds a new mail app alias.
 
@@ -56,10 +62,12 @@ Adds a new mail app alias.
 | packageName | <code>String</code> | The package name |
 
 <a name="cordova.plugins.email+isServiceAvailable"></a>
+
 ### cordova.plugins.email.isServiceAvailable()
 **Kind**: instance method of <code>[cordova.plugins.email](#cordova.plugins.email)</code>  
 **Depreacted**:   
 <a name="cordova.plugins.email+openDraft"></a>
+
 ### cordova.plugins.email.openDraft()
 Alias für `open()`.
 
