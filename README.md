@@ -48,6 +48,7 @@ Using this interface does not guarantee immediate delivery of the corresponding 
 - __Android__
 - __Amazon FireOS__
 - __Windows__
+- __Browser__
 
 
 ## Installation
@@ -83,6 +84,7 @@ Add the following xml to your config.xml to always use the latest version of thi
 - _\<img\>_ tags do not work on Android.
 - Callbacks for windows platform are called immediately.
 - _isAvailable_ does always return _true_ for windows platform.
+- HTML body content does not work in the browser.
 
 #### Further informations
 - See [CHANGELOG.md][changelog] to get the full changelog for the plugin.
@@ -185,6 +187,8 @@ cordova.plugins.email.open({
     isHtml:  true
 });
 ```
+
+When building for the browser, you *cannot* use HTML in the body content. Internally, this plugin generates a "mailto:"-style link to support browsers, and the mailto URI scheme only supports plain text body content. See [RFC6068](https://www.ietf.org/rfc/rfc6068.txt) for more details on mailto URIs.
 
 ### Get informed when the view has been dismissed
 The `open` method supports additional callback to get informed when the view has been dismissed.
