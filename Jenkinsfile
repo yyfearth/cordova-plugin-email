@@ -30,8 +30,8 @@ node {
             }
 
             stage('Test') {
-                sh "export PLATFORM=android && npm run test"
-                sh "export PLATFORM=ios && npm run test"
+                //sh "export PLATFORM=android && npm run test"
+                //sh "export PLATFORM=ios && npm run test"
             }
 
             stage('Integration-Test') {
