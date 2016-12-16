@@ -51,26 +51,6 @@ Using this interface does not guarantee immediate delivery of the corresponding 
 - __Browser__
 
 
-## Installation
-The plugin can either be installed from git repository, from local file system through the [Command-line Interface][CLI] for debugging. It's available as an [npm package][npm] for [PhoneGap Build][PGB] as well.
-
-### Local development environment
-From master:
-```bash
-# ~~ from master branch ~~
-cordova plugin add https://github.com/katzer/cordova-plugin-email-composer.git
-```
-from a local folder:
-```bash
-# ~~ local folder ~~
-cordova plugin add cordova-plugin-email-composer --searchpath path/to/plugin --link
-```
-or to use the last stable version:
-```bash
-# ~~ stable version ~~
-cordova plugin add cordova-plugin-email-composer@0.8.3
-```
-
 ### PhoneGap Build
 Add the following xml to your config.xml to always use the latest version of this plugin:
 ```xml
@@ -78,17 +58,9 @@ Add the following xml to your config.xml to always use the latest version of thi
 ```
 
 
-## ChangeLog
+## Changelog
 
-#### Known issues
-- _\<img\>_ tags do not work on Android.
-- Callbacks for windows platform are called immediately.
-- _isAvailable_ does always return _true_ for windows platform.
-- HTML body content does not work in the browser.
-
-#### Further informations
 - See [CHANGELOG.md][changelog] to get the full changelog for the plugin.
-
 
 ## Using the plugin
 The plugin creates the object ```cordova.plugins.email``` with following methods:
