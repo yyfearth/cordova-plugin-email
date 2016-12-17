@@ -8,15 +8,9 @@ install:
 
 build: off
 
+environment:
+  PLATFORM: windows
+
 test_script:
-  - cd ..
-  - del /s /q cordova-test-app
-  - git clone https://github.com/hypery2k/cordova-demo-app.git cordova-test-app
-  - cd cordova-test-app
-  - npm install
-  - bower install
-  - grunt build
-  - cordova platform add wp8
-  - cordova build wp8
-  - cordova plugin add ../cordova-email-plugin
-  - cordova build wp8
+  - npm run prepare
+  - npm run build -- --appx=8.1-phone
