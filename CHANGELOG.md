@@ -1,3 +1,8 @@
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/hypery2k/cordova-email-plugin/compare/v1.2.3...v1.2.4) (2016-12-18)
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/hypery2k/cordova-email-plugin/compare/v1.2.1...v1.2.3) (2016-12-17)
 
