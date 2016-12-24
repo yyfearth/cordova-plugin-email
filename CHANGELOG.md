@@ -1,3 +1,13 @@
+<a name="1.2.5"></a>
+## [1.2.5](https://github.com/hypery2k/cordova-email-plugin/compare/v1.2.4...v1.2.5) (2016-12-24)
+
+
+### Bug Fixes
+
+* **package:** fix version error ([#38](https://github.com/hypery2k/cordova-email-plugin/issues/38)) ([1992e95](https://github.com/hypery2k/cordova-email-plugin/commit/1992e95))
+
+
+
 <a name="1.2.4"></a>
 ## [1.2.4](https://github.com/hypery2k/cordova-email-plugin/compare/v1.2.3...v1.2.4) (2016-12-18)
 
