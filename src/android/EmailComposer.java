@@ -91,7 +91,7 @@ public class EmailComposer extends CordovaPlugin {
         }
 
         if ("isAvailable".equalsIgnoreCase(action)) {
-            isAvailable(args.getString(0));
+            isAvailable();
             return true;
         }
 
@@ -105,14 +105,11 @@ public class EmailComposer extends CordovaPlugin {
 
     /**
      * Tells if the device has the capability to send emails.
-     *
-     * @param id
-     * The app id.
      */
-    private void isAvailable (final String id) {
+    private void isAvailable () {
         cordova.getThreadPool().execute(new Runnable() {
             public void run() {
-                boolean[] available = impl.canSendMail(id, getContext());
+                boolean[] available = impl.canSendMail(null, getContext());
                 List<PluginResult> messages = new ArrayList<PluginResult>();
 
                 messages.add(new PluginResult(PluginResult.Status.OK, available[0]));
@@ -135,7 +132,7 @@ public class EmailComposer extends CordovaPlugin {
      */
     private void open (JSONArray args) throws JSONException {
         JSONObject props = args.getJSONObject(0);
-        String appId     = props.getString("app");
+        String appId     = props.optString("app");
 
         if (!(impl.canSendMail(appId, getContext()))[0]) {
             LOG.i(LOG_TAG, "No client or account found for.");
