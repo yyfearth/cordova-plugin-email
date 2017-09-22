@@ -36,8 +36,7 @@
       "android",
       "amazon-fireos",
       "ios",
-      "windows",
-      "wp8"
+      "windows"
     ]
   },
   "repository": {
@@ -51,7 +50,6 @@
     "cordova-android",
     "cordova-amazon-fireos",
     "cordova-ios",
-    "cordova-wp8",
     "cordova-windows"
   ],
   "author": "Martin Reinhardt",
